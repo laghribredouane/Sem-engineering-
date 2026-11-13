@@ -4,6 +4,7 @@ import { SEM_CONTENT } from '../data/semContent';
 import { Language, RoutePath } from '../types/sem';
 import { PageHeader } from '../components/PageHeader';
 import { ContactFaqAccordion } from '../components/ContactFaqAccordion';
+import { SemMapSection } from '../components/SemMapSection';
 
 interface ContactPageProps {
   language: Language;
@@ -304,6 +305,12 @@ export const ContactPage: React.FC<ContactPageProps> = ({
               </form>
             )}
           </div>
+        </div>
+      </section>
+
+      <section className="py-14 lg:py-20 bg-[#F8FAFC] dark:bg-[#070F1B] border-t border-slate-200 dark:border-slate-800 transition-colors duration-200">
+        <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
+          <SemMapSection language={language} />
         </div>
       </section>
 

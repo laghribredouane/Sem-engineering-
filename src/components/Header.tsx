@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Check, ChevronDown, Download, Loader2, Menu, Moon, Search, Sun, X } from 'lucide-react';
+import { Check, ChevronDown, Download, FileText, Loader2, Menu, Moon, Search, Sun, X } from 'lucide-react';
 import { IMAGES, SEM_CONTENT } from '../data/semContent';
 import { Language, RoutePath } from '../types/sem';
 import { downloadCompanyBrochure } from '../utils/downloadBrochure';
@@ -267,6 +267,17 @@ export const Header: React.FC<HeaderProps> = ({
                   : 'Download Brochure'}
             </span>
             <span className="xl:hidden">Brochure</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => window.print()}
+            aria-label={language === 'fr' ? 'Télécharger la version PDF (Imprimer la page)' : 'Download PDF Version (Print page)'}
+            title={language === 'fr' ? 'Version PDF / Imprimer' : 'PDF Version / Print'}
+            className="hidden md:inline-flex items-center gap-1.5 h-10 px-3 text-sm font-medium text-slate-700 dark:text-slate-200 hover:text-[#3769B3] dark:hover:text-[#24A9E0] bg-white dark:bg-slate-900 hover:bg-slate-50 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-lg transition-colors duration-150 whitespace-nowrap shrink-0"
+          >
+            <FileText className="w-4 h-4 text-[#3769B3] dark:text-[#24A9E0]" aria-hidden="true" />
+            <span className="hidden lg:inline">{language === 'fr' ? 'Version PDF' : 'PDF Version'}</span>
           </button>
 
           <button

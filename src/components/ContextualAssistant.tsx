@@ -36,46 +36,50 @@ function getSuggestedPrompts(
     switch (path) {
       case '/domaines-d-activites':
         return [
-          'What does the Electronic Security Pole cover?',
-          'How does SEM manage QoS & Drive Testing?',
-          'Do you build turnkey Data Centers?',
+          'What are the technical specs of FTK optical and microwave backbones?',
+          'How do you integrate long-range radar sensors and thermal cameras?',
+          'Which M2M protocols do you use for Data Center telemetry?',
+          'How are multi-operator QoS Drive Test audits conducted?',
         ];
       case '/portefeuille':
         return [
-          'Which brands does SEM distribute exclusively?',
-          'What power & shelter infrastructure do you deploy?',
-          'Tell me about Keysight & Ericsson solutions',
+          'Which exclusive Keysight RF test & measurement instruments do you distribute?',
+          'What power ranges do GENELEC industrial generators cover?',
+          'What precision cooling architectures do you deploy for Data Centers?',
+          'Which low current and solar backup systems do you integrate?',
         ];
       case '/histoire':
       case '/mission-et-valeurs':
       case '/mot-du-directeur-general':
         return [
-          'How did SEM evolve since 2008?',
-          'What is SEM’s footprint in Africa?',
-          'How does SEM help optimize OPEX?',
+          'How has SEM maintained engineering continuity since 2008?',
+          'What is the South-South technical cooperation framework in Africa?',
+          'How does SEM engineering directly reduce client OPEX?',
         ];
       case '/certifications':
       case '/organisation':
         return [
-          'How does SEM’s hybrid organization work?',
-          'Which ISO & EHS standards does SEM follow?',
+          'What are the ISO 9001 and OHSAS 18001 compliance requirements on site?',
+          'How is SEM’s hybrid matrix and projectized organization structured?',
+          'What EHS governance protocols apply during tower and shelter installation?',
         ];
       case '/offres-d-emplois':
       case '/candidature':
         return [
-          'Which engineering profiles do you recruit?',
-          'How do I submit a spontaneous application?',
+          'What core engineering profiles (IP, QoS, RF, PMO) do you recruit?',
+          'How does the technical onboarding and OJT knowledge transfer work?',
         ];
       case '/nous-contacter':
         return [
-          'What are your Mohammedia HQ hours & phone?',
-          'Which department handles project quotes?',
+          'What are your Mohammedia HQ hours, coordinates, and direct contacts?',
+          'Which technical department evaluates engineering project specifications?',
         ];
       default:
         return [
-          'What are SEM’s 4 strategic business units?',
-          'How does SEM reduce telecom OPEX?',
-          'Where is SEM located and how can I request a quote?',
+          'What are SEM’s 4 strategic engineering business units?',
+          'How do you engineer turnkey FTK infrastructure projects?',
+          'What are your exclusive OEM partnerships (Keysight, Ericsson, GENELEC)?',
+          'Where is your HQ and how can I request a technical quote?',
         ];
     }
   }
@@ -83,46 +87,50 @@ function getSuggestedPrompts(
   switch (path) {
     case '/domaines-d-activites':
       return [
-        'Que couvre le Pôle Sûreté Électronique ?',
-        'En quoi consiste le Pôle QoS & Drive Test ?',
-        'Déployez-vous des Data Centers clés en main ?',
+        'Quelles sont les spécifications des liaisons optiques et hertziennes FTK ?',
+        'Comment intégrez-vous les capteurs radar et caméras thermiques longue portée ?',
+        'Quels protocoles de supervision M2M utilisez-vous pour les Data Centers ?',
+        'Comment sont menés les audits de performance QoS et Drive Test ?',
       ];
     case '/portefeuille':
       return [
-        'Quelles marques distribuez-vous en exclusivité ?',
-        'Quelles solutions d’énergie et shelters proposez-vous ?',
-        'Parlez-moi des équipements Keysight et Ericsson',
+        'Quels instruments de test RF Keysight distribuez-vous en exclusivité ?',
+        'Quelles puissances de groupes électrogènes GENELEC proposez-vous ?',
+        'Quelles sont les architectures de climatisation de précision pour Data Centers ?',
+        'Quels systèmes de courants faibles et d’énergie solaire intégrez-vous ?',
       ];
     case '/histoire':
     case '/mission-et-valeurs':
     case '/mot-du-directeur-general':
       return [
-        'Quelle est l’histoire de SEM depuis 2008 ?',
-        'Dans combien de pays d’Afrique intervenez-vous ?',
-        'Comment SEM aide à réduire les coûts OPEX ?',
+        'Comment SEM assure-t-elle la continuité technique depuis 2008 ?',
+        'Quelle est la méthodologie de coopération Sud-Sud en Afrique ?',
+        'Comment l’ingénierie SEM permet-elle de réduire les OPEX clients ?',
       ];
     case '/certifications':
     case '/organisation':
       return [
-        'Comment fonctionne votre organisation hybride ?',
-        'Quelles démarches ISO 9001 et EHS appliquez-vous ?',
+        'Quelles sont les exigences de conformité ISO 9001 et OHSAS 18001 sur chantier ?',
+        'Comment s’articule l’organisation hybride matricielle et projectized de SEM ?',
+        'Quels protocoles EHS sont appliqués lors du levage de pylônes et shelters ?',
       ];
     case '/offres-d-emplois':
     case '/candidature':
       return [
-        'Quels profils d’ingénieurs recrutez-vous ?',
-        'Comment envoyer une candidature spontanée ?',
+        'Quels profils d’ingénieurs (IP, QoS, RF, PMO) recrutez-vous en priorité ?',
+        'Comment fonctionne le transfert de compétences et le tutorat OJT ?',
       ];
     case '/nous-contacter':
       return [
-        'Quels sont l’adresse et les horaires du siège ?',
-        'Quelle direction contacter pour un devis ?',
+        'Quels sont l’adresse, les coordonnées et les horaires du siège de Mohammedia ?',
+        'Quel département technique évalue les cahiers des charges et devis projets ?',
       ];
     default:
       return [
-        'Quels sont les 4 pôles d’activités de SEM ?',
-        'Comment réduire nos coûts OPEX avec SEM ?',
-        'Où se situe le siège et comment demander un devis ?',
+        'Quels sont les 4 pôles stratégiques d’ingénierie de SEM ?',
+        'Comment planifier un déploiement d’infrastructure FTK clé en main ?',
+        'Quels sont vos partenariats exclusifs (Keysight, Ericsson, GENELEC) ?',
+        'Où se situe le siège et comment demander un devis technique ?',
       ];
   }
 }

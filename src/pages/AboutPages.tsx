@@ -558,6 +558,111 @@ export const OrganisationPage: React.FC<AboutSubPageProps> = ({
               </button>
             </div>
           </div>
+
+          {/* Our Team / Notre Équipe Section */}
+          <div className="space-y-8 pt-6">
+            <div className="max-w-2xl">
+              <div className="text-xs font-semibold tracking-wide text-[#3769B3] dark:text-[#24A9E0] mb-2 uppercase">
+                {language === 'fr' ? 'Gouvernance & Leadership Technique' : 'Governance & Technical Leadership'}
+              </div>
+              <h2 className="font-display text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white">
+                {language === 'fr' ? 'Notre Équipe de Direction & Experts' : 'Our Leadership & Engineering Team'}
+              </h2>
+              <p className="mt-3 text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+                {language === 'fr'
+                  ? 'Une équipe pluridisciplinaire d’ingénieurs, de directeurs de projets et d’experts sectoriels engagés pour la réussite de vos infrastructures critiques.'
+                  : 'A multidisciplinary team of engineers, project directors, and sector experts dedicated to the success of your critical infrastructures.'}
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {[
+                {
+                  name: 'Youssef El Malali',
+                  roleFr: 'Directeur Général & Fondateur',
+                  roleEn: 'General Manager & Founder',
+                  bioFr: 'Fondateur de SEM en 2008, pilote la vision stratégique et l’expansion des activités à l’international et en Afrique.',
+                  bioEn: 'Founded SEM in 2008, driving strategic vision and international expansion across 17 African nations.',
+                  initials: 'YEM',
+                },
+                {
+                  name: 'Équipe Pôle Services IT & Télécoms',
+                  roleFr: 'Direction des Opérations & Déploiements FTK',
+                  roleEn: 'Operations & FTK Rollout Director',
+                  bioFr: 'Pilotage des grands projets d’infrastructure, réseaux de transmission hertzienne/optique et intégration Data Centers.',
+                  bioEn: 'Leading turnkey infrastructure projects, optical & wireless transmission backbones, and Data Center integration.',
+                  initials: 'PS',
+                },
+                {
+                  name: 'Équipe Pôle Conseil & AMOA',
+                  roleFr: 'Direction du Conseil & Ingénierie Système',
+                  roleEn: 'Consulting & Systems Engineering Lead',
+                  bioFr: 'Accompagnement des opérateurs et administrations dans la conception, la planification réseau et l’assistance à maîtrise d’ouvrage.',
+                  bioEn: 'Guiding operators and public administrations in network design, spectrum planning, and project management oversight.',
+                  initials: 'PC',
+                },
+                {
+                  name: 'Équipe Pôle Sûreté Électronique',
+                  roleFr: 'Ingénierie des Systèmes de Sécurité Critique',
+                  roleEn: 'Critical Security Systems Engineering',
+                  bioFr: 'Conception et déploiement de solutions de vidéosurveillance intelligente, radars côtiers et centres de commandement unifiés.',
+                  bioEn: 'Designing intelligent video surveillance, coastal radars, and unified command and control centers.',
+                  initials: 'SE',
+                },
+                {
+                  name: 'Équipe Pôle Qualité de Service (QoS)',
+                  roleFr: 'Audit, Benchmarking & Mesure Radio',
+                  roleEn: 'QoS Audit, Benchmarking & RF Testing',
+                  bioFr: 'Audits de performance mobile, campagnes Drive Test nationales et distribution exclusive des instruments Keysight.',
+                  bioEn: 'Mobile network performance audits, national Drive Test campaigns, and exclusive Keysight instrument distribution.',
+                  initials: 'QoS',
+                },
+                {
+                  name: 'Équipe Qualité, EHS & Conformité',
+                  roleFr: 'Contrôle Qualité & Management EHS',
+                  roleEn: 'Quality Control & EHS Governance',
+                  bioFr: 'Garantie du respect des normes ISO 9001 et OHSAS 18001 sur l’ensemble des chantiers et sites opérationnels de SEM.',
+                  bioEn: 'Ensuring rigorous ISO 9001 and OHSAS 18001 compliance across all SEM field execution sites.',
+                  initials: 'QE',
+                },
+              ].map((member) => (
+                <div
+                  key={member.name}
+                  className="bg-[#F8FAFC] dark:bg-[#0B192C] border border-slate-200 dark:border-slate-800 rounded-2xl p-6 flex flex-col justify-between hover:-translate-y-1 hover:border-[#3769B3] dark:hover:border-[#24A9E0] transition-all duration-200 shadow-sm"
+                >
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3.5">
+                      <div className="w-12 h-12 rounded-xl bg-[#3769B3] text-white font-display font-bold text-sm flex items-center justify-center shrink-0 shadow-sm">
+                        {member.initials}
+                      </div>
+                      <div className="min-w-0">
+                        <div className="font-display text-base font-bold text-slate-900 dark:text-white truncate">
+                          {member.name}
+                        </div>
+                        <div className="text-xs font-semibold text-[#3769B3] dark:text-[#24A9E0] truncate">
+                          {language === 'fr' ? member.roleFr : member.roleEn}
+                        </div>
+                      </div>
+                    </div>
+                    <p className="text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+                      {language === 'fr' ? member.bioFr : member.bioEn}
+                    </p>
+                  </div>
+
+                  <div className="pt-4 mt-6 border-t border-slate-200/70 dark:border-slate-800/80 flex items-center justify-between text-xs text-slate-500">
+                    <span className="font-mono">SEM — Mohammedia</span>
+                    <button
+                      type="button"
+                      onClick={() => onNavigate('/nous-contacter')}
+                      className="font-semibold text-[#3769B3] dark:text-[#24A9E0] hover:underline"
+                    >
+                      {language === 'fr' ? 'Contacter' : 'Contact'}
+                    </button>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
     </div>
