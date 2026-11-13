@@ -1,0 +1,6 @@
+{
+  "name": "SEM — Smart Engineering & Management",
+  "description": "Ingénierie IT, Télécommunications, Data Centers, Broadcast & VSAT, Sûreté Électronique, Conseil et Qualité de Service au Maroc et en Afrique.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

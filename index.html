@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SEM — Smart Engineering &amp; Management | Ingénierie IT &amp; Télécoms</title>
+    <meta name="description" content="Ingénierie IT, Télécommunications, Data Centers, Broadcast & VSAT, Sûreté Électronique, Conseil et Qualité de Service au Maroc et en Afrique." />
+    <meta property="og:title" content="SEM — Smart Engineering &amp; Management" />
+    <meta property="og:description" content="Ingénierie IT, Télécommunications, Data Centers, Broadcast & VSAT, Sûreté Électronique, Conseil et Qualité de Service au Maroc et en Afrique." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..600&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('sem-theme');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (stored === 'dark' || (!stored && prefersDark)) {
+            document.documentElement.classList.add('dark');
+          }
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body class="bg-[#F8FAFC] dark:bg-[#070F1B] text-[#0F172A] dark:text-slate-100 antialiased selection:bg-[#3769B3]/15 selection:text-[#1E40AF] dark:selection:bg-[#24A9E0]/25 dark:selection:text-white transition-colors duration-200">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
